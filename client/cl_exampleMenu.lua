@@ -7,7 +7,7 @@ local foods = {
     0xF00D,
 }
 local description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-Menu = {
+local Menu = {
     {
         mBind = 51,
         mIndex = "showcase",
