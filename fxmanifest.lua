@@ -23,9 +23,5 @@ client_scripts {
 }
 client_scripts { 
     "client/cl_automation.lua",
-	"client/cl_main.lua" 
-} 
- 
-server_scripts { 
-	"server/sv_main.lua" 
-} 
+    "client/cl_exampleMenu.lua",
+}
