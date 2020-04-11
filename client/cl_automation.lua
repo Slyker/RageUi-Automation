@@ -89,8 +89,12 @@ function DrawItems(tblItems)
             _v.SubTitle = ""
         end
         if _v.Condition() then
-            if _v.Type == "button" then
-                RageUI.Button(_v.Title, _v.SubTitle, _v.Badges, IsNilBool(_v.Activated), function(Hovered, Active, Selected)
+            if _v.Type == "button" or "centerbtn" then
+                local BtnType = RageUI.Button
+                if _v.Type == "centerbtn" then
+                    BtnType = RageUI.CenterButton
+                end
+                BtnType(_v.Title, _v.SubTitle, _v.Badges, IsNilBool(_v.Activated), function(Hovered, Active, Selected)
                     if (Selected) and IsFunction(_v.Selected) then
                         _v.Selected(_k, _v)
                     end

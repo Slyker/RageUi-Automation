@@ -85,7 +85,7 @@ Menu = {
                 SubMenu = {"showcase","submenu"}
             },
             {
-                Type = "button",
+                Type = "centerbtn",
                 Title = "RageUI.BadgeStyle",
                 SubTitle = description,
                 Badges = {RightLabel = "→→→" },
@@ -181,8 +181,8 @@ for i = 1,100 do
 end
 for BadgeName, Badge in pairs(RageUI.BadgeStyle) do
     MyBtn = {
-       Type = "button",
-       Title = string.format("RageUI.BadgeStyle.%s", BadgeName),
+       Type = "centerbtn",
+       Title = "RageUI.BadgeStyle.".. BadgeName,
        SubTitle = nil,
        Badges = {RightBadge = Badge, LeftBadge = Badge}
     }
