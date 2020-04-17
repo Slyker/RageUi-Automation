@@ -183,7 +183,6 @@ for BadgeName, Badge in pairs(RageUI.BadgeStyle) do
     MyBtn = {
        Type = "centerbtn",
        Title = "RageUI.BadgeStyle.".. BadgeName,
-       SubTitle = nil,
        Badges = {RightBadge = Badge, LeftBadge = Badge}
     }
     table.insert(Menu[1].SubMenus[2].Items, MyBtn)
