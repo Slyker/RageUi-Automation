@@ -32,27 +32,15 @@ function GenMenu(menuTbl)
 end
 ---- Don't need to use these functions -------
 function IsFunction(fct)
-    if type(fct) == "function" then
-        return true
-    else
-        return false
-    end
+   return type(fct) == "function"
 end
 
 function IsNilBool(Var)
-    if Var == nil then
-        return true
-    else
-        return Var
-    end
+    return Var or true
 end
 
 function IsNilStr(Var)
-    if Var == nil then
-        return ""
-    else
-        return Var
-    end
+  return Var or ""
 end
 
 function M_IsVisible(v)
