@@ -74,7 +74,7 @@ function DrawItems(tblItems)
             _v.Title = ""
         end
         if _v.Condition() then
-            if _v.Type == "button" or "centerbtn" then
+            if _v.Type == "button" or _v.Type == "centerbtn" then
                 local BtnType = RageUI.Button
                 if _v.Type == "centerbtn" then
                     BtnType = RageUI.CenterButton
